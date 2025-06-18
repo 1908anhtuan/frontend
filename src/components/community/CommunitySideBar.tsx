@@ -13,7 +13,7 @@ interface CommunitySidebarProps {
   onMembershipChange: (isMember: boolean) => void
 }
 
-export default function CommunitySidebar({ community, settings, isMember, onMembershipChange }: CommunitySidebarProps) {
+export default function CommunitySidebar({ community, isMember, onMembershipChange }: CommunitySidebarProps) {
   const navigate = useNavigate()
   const { isAuthenticated } = useAuth0()
 

@@ -11,7 +11,6 @@ interface JoinCommunityButtonProps {
 }
 
 export default function JoinCommunityButton({
-  communityId,
   isMember,
   onMembershipChange,
   className = "",

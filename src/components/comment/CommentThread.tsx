@@ -30,7 +30,7 @@ export default function CommentThread({
 }: CommentThreadProps) {
   const [showReplyForm, setShowReplyForm] = useState(false)
   const [isCollapsed, setIsCollapsed] = useState(false)
-  const [showReplies, setShowReplies] = useState(true)
+  const [showReplies] = useState(true)
 
   const maxLevel = 6 // Maximum nesting level
   const isMaxLevel = level >= maxLevel
