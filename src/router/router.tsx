@@ -1,4 +1,4 @@
-import { BrowserRouter as Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom"; 
 import HomePage from "../pages/HomePage";
 import ProfilePage from "../pages/ProfilePageVercel";
 import OnboardingPage from "../pages/OnboardingPage";
