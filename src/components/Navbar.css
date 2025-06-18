@@ -1,0 +1,85 @@
+.navbar {
+  background-color: #682525;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #fff; /* White logo */
+}
+
+.navbar-buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Increased space between buttons */
+}
+
+.navbar-button {
+  padding: 8px 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #e9edf1;
+  border-radius: 4px;
+  color: #e8ebee;
+  transition: 0.3s;
+}
+
+/* Hover effect for buttons */
+.navbar-button:hover {
+  background-color: #17181a;
+  color: white;
+}
+
+/* Styling for the navbar links */
+.navbar-link {
+  color: #e8ebee; /* Light color for links */
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 8px 12px;
+  border-radius: 4px;
+  position: relative;
+  transition: color 0.3s, transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Hover effect for navbar links */
+.navbar-link:hover {
+  color: #878785; /* Golden color on hover */
+  transform: scale(1.1); /* Slight scaling effect */
+}
+
+.navbar-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #878785; /* Golden color */
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+/* Underline animation on hover */
+.navbar-link:hover::after {
+  width: 100%;
+}
+
+/* Styling for the welcome text */
+.navbar-welcome-text {
+  margin-right: 20px; /* Adds space to the right of the welcome text */
+  font-size: 1rem; /* Adjust font size */
+  color: #e8ebee; /* Light color for text */
+  font-weight: 500; /* Slightly bolder text */
+}
