@@ -1,9 +1,8 @@
 import axios from "axios"
 import type { Comment, CreateCommentDto, UpdateCommentDto } from "../types/types"
 
-const API_URL = import.meta.env.VITE_CORESERVICE_API_URL || "http://localhost:8080/core-service"
+const API_URL = `${import.meta.env.VITE_API_GATEWAY_URL}/core-service`
 
-// --- Comments ---
 
 export const getCommentsByPost = (postId: string, accessToken: string) => {
   return axios.get<Comment[]>(`${API_URL}/api/comments/post/${postId}`, {

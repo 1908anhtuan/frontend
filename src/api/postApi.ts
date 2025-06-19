@@ -1,7 +1,7 @@
 import axios from "axios"
 import type { Post, CreatePostDto } from "../types/types"
 
-const API_URL = import.meta.env.VITE_CORESERVICE_API_URL || "http://localhost:8080/core-service"
+const API_URL = `${import.meta.env.VITE_API_GATEWAY_URL}/core-service`
 
 // --- Posts ---
 

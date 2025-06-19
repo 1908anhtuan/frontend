@@ -2,7 +2,7 @@ import axios from "axios";
 import { CreateProfileDto } from "../types/CreateProfileDto";
 import { UpdateProfileDto } from "../types/UpdateProfileDto"; 
 
-const API_URL = "http://localhost:8080/user-service";
+const API_URL = `${import.meta.env.VITE_API_GATEWAY_URL}/user-service`;
 
 // Function to get the user profile
 export const getUserProfile = async (accessToken: string) => {

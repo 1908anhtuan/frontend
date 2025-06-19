@@ -12,10 +12,8 @@ const AppRouter = () => {
   return (
     
       <Routes>
-        {/* The onboarding page is available at /onboarding */}
         <Route path="/onboarding" element={<OnboardingPage />} />
 
-        {/* Protected route, profile required */}
         <Route
           path="/profile"
           element={

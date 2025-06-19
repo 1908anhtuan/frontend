@@ -8,7 +8,7 @@ import type {
   UpdateCommunitySettingsRequest
 } from "../types/types"
 
-const API_URL = "http://localhost:8080/community-service"
+const API_URL = `${import.meta.env.VITE_API_GATEWAY_URL}/community-service`
 
 // --- Communities ---
 
